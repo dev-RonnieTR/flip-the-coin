@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--font-size-root: 16px;
+	--font-size-small: 1.25rem;
+	--font-size-medium: 1.5rem;
+	--font-size-large: 4rem;
+	--font-weight-semibold: 600;
+
+	--color-1: #35383f;
+	--color-2: #ecedf0;
+	--color-3: #1f6fb0;
+	--color-4: #404a65;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	background-color: var(--color-4);
+}
+main {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 0.5;
+	justify-content: space-around;
+	align-items: center;
+}
+#flip-button {
+	width: min(100%, 7rem);
+	height: 3rem;
+
+	border: none;
+	border-radius: 0.5rem;
+	background-color: var(--color-3);
+	box-shadow: 0px 4px 0px 0px #23649b;
+
+	transition: transform 0.07s ease-in-out;
+}
+#flip-button:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+#flip-button:active {
+	transform: scale(1.1);
+	background-color: #1c5686;
+	box-shadow: none;
+}
+
+/* TYPOGRAPHY */
+html,
+#flip-button {
+	font-family: "Kanit", sans-serif;
+	text-align: center;
+	color: var(--color-2);
+	font-weight: var(--font-weight-semibold);
+}
+.heading {
+	font-size: var(--font-size-large);
+	text-shadow: 2px 2px 0px #35383f;
+	-webkit-text-stroke-width: 4px;
+	-webkit-text-stroke-color: #35383f;
+}
+.instruction {
+	font-size: var(--font-size-medium);
+}
+#result {
+	font-size: var(--font-size-medium);
+}
