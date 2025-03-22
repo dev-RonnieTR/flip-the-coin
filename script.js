@@ -15,11 +15,11 @@ function flipCoin() {
 }
 
 function heads() {
-    setCoinState("Heads", "/resources/heads.svg");
+    setCoinState("Heads", "resources/heads.svg");
 }
 
 function tails() {
-    setCoinState("Tails", "/resources/tails.svg");
+    setCoinState("Tails", "resources/tails.svg");
 }
 
 function setCoinState(outcome, imageSource) {
