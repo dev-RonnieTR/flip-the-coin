@@ -79,6 +79,7 @@ main {
 html,
 #flip-button {
 	font-family: "Kanit", sans-serif;
+	font-size: var(--font-size-root);
 	text-align: center;
 	color: var(--color-2);
 	font-weight: var(--font-weight-semibold);
