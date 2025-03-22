@@ -37,6 +37,10 @@ main {
 	justify-content: space-around;
 	align-items: center;
 }
+#coin {
+	width: 10rem;
+	height: auto;
+}
 #flip-button {
 	width: min(100%, 7rem);
 	height: 3rem;
@@ -90,4 +94,10 @@ html,
 }
 #result {
 	font-size: var(--font-size-medium);
+}
+
+@media (min-width: 1280px) {
+	:root {
+		--font-size-root: clamp(16px, 1.25vw, 20px);
+	}
 }
